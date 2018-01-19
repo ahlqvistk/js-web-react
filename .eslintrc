@@ -1,12 +1,23 @@
 {
-  "extends": ["eslint:recommended", "google"],
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "google"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     }
   },
-  "plugins": ["react"],
+  "plugins": [
+    "react"
+  ],
   "rules": {
-    "react/jsx-uses-react": 1
+    "indent": ["error", 2],
+    "react/prop-types": 0,
+    "require-jsdoc": 0
   }
 }
